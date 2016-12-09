@@ -9,6 +9,7 @@
 - How to run 
 	- List your RGB image files in an .csv (ex. image_set.csv)
 	- Store RGB image files in 'data'
+	- Run
 	```
 	th depth_inference.lua -pretrained_model pretrained_model/Best_model_period1.t7 -image_list data/LAB822/image_set.csv  -output_path output/LAB822
 
