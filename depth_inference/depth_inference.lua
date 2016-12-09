@@ -78,7 +78,7 @@ for i = 1, num_pictures do
     save_img = torch.reshape(save_img, 1, save_img:size(3), save_img:size(4))
     save_img = save_img:float() 
     save_img = image.scale(save_img, img_original_width, img_original_height)
-    print(save_img:size())
+    print('Image ' .. tostring(i) .. 'finished. ')
     image.save(cmd_params.output_path  .. '/' .. tostring(i) .. '.jpg', save_img)
     save_img = torch.reshape(save_img, save_img:size(2), save_img:size(3))
     npy4th.savenpy(cmd_params.output_path .. '/' .. tostring(i) .. '.npy', save_img)
